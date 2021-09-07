@@ -1,9 +1,9 @@
 package StenSaxPase;
 
-import java.util.Scanner;
-
 public class WriteMenu {
-
+    /**
+     * Huvud menyn, efterfrågar vad spelaren vill göra sedan utför det som valts
+     */
     public static void mainMenu(){
         System.out.println("1. Ny Match\t2. Historik\t3. Avsluta Spelet");
         System.out.print("User Input: ");
@@ -25,15 +25,29 @@ public class WriteMenu {
 
     }
 
+    /**
+     * Efterfrågar spelarens val, sedan räknar ut Datorns val och skriver ut vinnaren.
+     * Sparar resultatet i spelarens historik sedan påbörjar "afterMatchMenu" metoden.
+     */
     public static void matchChoiceMenu(){
         System.out.println("Vad väljer du?\n1. Sten\t2. Sax\t3. Påse");
         System.out.print("User Input: ");
         Player.playerChoice();
         Computer.setComputerChoice();
-        Player.setMatchResults(GameLogic.matchExecute(Player.getPlayerChoice(),Computer.getComputerChoice()));
+        // simplifierad för läsbarhet
+        int spelarVal = Player.getPlayerChoice();
+        int datorVal = Computer.getComputerChoice();
+        String matchResultat;
+
+        matchResultat = GameLogic.matchExecute(spelarVal,datorVal);
+        Player.setMatchResults(matchResultat);
         afterMatchMenu();
     }
 
+    /**
+     * Menyn efter en match har spelats.
+     * Efterfrågar vad spelaren vill göra, sedan utför det som spelaren angivit
+     */
     public static void afterMatchMenu(){
         System.out.println("1. Meny\t2. Kör igen\t3. Avsluta Spelet");
         System.out.print("User Input: ");
