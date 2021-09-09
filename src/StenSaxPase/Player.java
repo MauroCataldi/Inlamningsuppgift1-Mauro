@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  * Innehåller och efterfrågar/räknar ut spelarens val. Innehåller även match historik, samt håller koll på
  * vilket index det har sparat historik fram till.
+ * @// TODO: 2021-09-09 använd dig av add, behövs ingen index counter...
  */
 public class Player {
 
