@@ -9,8 +9,8 @@ import java.util.Scanner;
  */
 public class Player {
 
-    private static ArrayList<String>matchResults= new ArrayList<>();//spelarens historik
-    private static int playerChoice;
+    private ArrayList<String>matchResults= new ArrayList<>();//spelarens historik
+    private int playerChoice;
 
     /**
      * efterfrågar val 1-3 i en loop tills det får det den vill ha
@@ -23,7 +23,7 @@ public class Player {
             System.out.print("Endast siffror som motsvarar menyvalen tack!\nUser Input:");
             pChoice = scan.nextLine();
         }
-        Player.playerChoice = Integer.parseInt(pChoice);
+        this.playerChoice = Integer.parseInt(pChoice);
     }
 
     /**
