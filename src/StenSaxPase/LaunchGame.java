@@ -1,8 +1,9 @@
 package StenSaxPase;
 
+
 /**
- * Innehåller main metoden
- * @// TODO: 2021-09-09 skapa objekt av klasserna sedan använd objekten din idiot
+ * @author Mauro Cataldi
+ * innehåller main metoden som startar programmet
  */
 public class LaunchGame {
     /**

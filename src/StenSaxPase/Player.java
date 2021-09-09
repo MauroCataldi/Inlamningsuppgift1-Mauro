@@ -6,18 +6,17 @@ import java.util.Scanner;
 /**
  * Innehåller och efterfrågar/räknar ut spelarens val. Innehåller även match historik, samt håller koll på
  * vilket index det har sparat historik fram till.
- * @// TODO: 2021-09-09 använd dig av add, behövs ingen index counter...
  */
 public class Player {
 
     private static ArrayList<String>matchResults= new ArrayList<>();//spelarens historik
-    private static int playerChoice, indexCounter=0;
+    private static int playerChoice;
 
     /**
      * efterfrågar val 1-3 i en loop tills det får det den vill ha
      * då sparas det i spelarens val "playerChoice"
      */
-    public static void playerChoice() {
+    public void playerChoice() {
         Scanner scan = new Scanner(System.in);
         String pChoice = scan.nextLine();
         while (!(pChoice.equals("1") || pChoice.equals("2") || pChoice.equals("3"))) {
@@ -31,7 +30,7 @@ public class Player {
      *
      * @return returnerar spelarens val
      */
-    public static int getPlayerChoice() {
+    public int getPlayerChoice() {
         return playerChoice;
     }
 
@@ -39,10 +38,10 @@ public class Player {
      * skriver ut match historiken om det finns någon lagrad
      * annars skrivs det ut att det inte finns någon
      */
-    public static void printHistory(){
-        if(indexCounter>0){
+    public void printHistory(){
+        if(!matchResults.isEmpty()){
             System.out.println("\nSkriver ut historik:");
-            for(int i =0;i<indexCounter;i++){
+            for(int i =0;i<matchResults.size();i++){
                 System.out.println(matchResults.get(i));
             }
             System.out.println(" ");
@@ -56,8 +55,7 @@ public class Player {
      * OBS! Om användaren spelar mer matcher än Integer variabeln tillåter kommer spelet inte fungera
      * @param matchResult tar emot resultatet som vill sparas av matchen i form av String
      */
-    public static void setMatchResults(String matchResult) {
-        matchResults.add(indexCounter, matchResult);
-        indexCounter++;
+    public void setMatchResults(String matchResult) {
+        matchResults.add(matchResult);
     }
 }

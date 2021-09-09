@@ -4,19 +4,22 @@ package StenSaxPase;
  * Innehåller alla menyer som presenteras för användaren
  */
 public class WriteMenu {
+    //initierar objekt av spelare samt dator
+    public static Computer computerPlayer = new Computer();
+    public static Player playerOne = new Player();
     /**
      * Huvud menyn, efterfrågar vad spelaren vill göra sedan utför det som valts
      */
     public static void mainMenu(){
         System.out.println("1. Ny Match\t2. Historik\t3. Avsluta Spelet");
         System.out.print("User Input: ");
-        Player.playerChoice();
-        switch(Player.getPlayerChoice()){
+        playerOne.playerChoice();
+        switch(playerOne.getPlayerChoice()){
             case 1:
                 matchChoiceMenu();
                 break;
             case 2:
-                Player.printHistory();
+                playerOne.printHistory();
                 mainMenu();
                 break;
             case 3:
@@ -35,15 +38,15 @@ public class WriteMenu {
     public static void matchChoiceMenu(){
         System.out.println("Vad väljer du?\n1. Sten\t2. Sax\t3. Påse");
         System.out.print("User Input: ");
-        Player.playerChoice();
-        Computer.setComputerChoice();
+        playerOne.playerChoice();
+        computerPlayer.setComputerChoice();
         // simplifierad för läsbarhet
-        int spelarVal = Player.getPlayerChoice();
-        int datorVal = Computer.getComputerChoice();
+        int spelarVal = playerOne.getPlayerChoice();
+        int datorVal = computerPlayer.getComputerChoice();
         String matchResultat;
 
         matchResultat = GameLogic.matchExecute(spelarVal,datorVal);
-        Player.setMatchResults(matchResultat);
+        playerOne.setMatchResults(matchResultat);
         afterMatchMenu();
     }
 
@@ -54,8 +57,8 @@ public class WriteMenu {
     public static void afterMatchMenu(){
         System.out.println("1. Meny\t2. Kör igen\t3. Avsluta Spelet");
         System.out.print("User Input: ");
-        Player.playerChoice();
-        switch(Player.getPlayerChoice()){
+        playerOne.playerChoice();
+        switch(playerOne.getPlayerChoice()){
             case 1:
                 mainMenu();
                 break;

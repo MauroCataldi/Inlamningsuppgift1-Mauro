@@ -7,7 +7,6 @@ public class GameLogic {
     /**
      * en metod som både skriver ut vad spelarna i matchen valde samt skriver ut resultaten och skickar det tillbaka
      * till där metoden kallades från för att sparas i spelarens historik
-     *
      * @param playerChoice Integer valet sparat i spelar(Player) klassen skickas hit
      * @param computerChoice Integer valet sparat i dator(Computer) klassen skickas hit
      * @return String är returnerad med medelandet av matchens resultat
