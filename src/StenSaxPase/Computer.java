@@ -1,5 +1,9 @@
 package StenSaxPase;
 
+/**
+ * Innehåller ett värde som representerar datorns val
+ * Kan Slumpa fram ett nytt värde och skicka tillbaka det om det efterfrågas
+ */
 public class Computer {
     private static int computerChoice;
     /**

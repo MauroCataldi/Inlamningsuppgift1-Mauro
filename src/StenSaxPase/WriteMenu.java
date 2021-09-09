@@ -1,5 +1,8 @@
 package StenSaxPase;
 
+/**
+ * Innehåller alla menyer som presenteras för användaren
+ */
 public class WriteMenu {
     /**
      * Huvud menyn, efterfrågar vad spelaren vill göra sedan utför det som valts

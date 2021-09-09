@@ -3,7 +3,12 @@ package StenSaxPase;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Innehåller och efterfrågar/räknar ut spelarens val. Innehåller även match historik, samt håller koll på
+ * vilket index det har sparat historik fram till.
+ */
 public class Player {
+
     private static ArrayList<String>matchResults= new ArrayList<>();//spelarens historik
     private static int playerChoice, indexCounter=0;
 

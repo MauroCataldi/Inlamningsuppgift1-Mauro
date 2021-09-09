@@ -1,5 +1,8 @@
 package StenSaxPase;
 
+/**
+ * Innehåller main metoden
+ */
 public class LaunchGame {
     /**
      * Kallar på mainMenu metoden hos WriteMenu klassen och startar på detta vis spelet

@@ -1,5 +1,8 @@
 package StenSaxPase;
 
+/**
+ * Skriver ut spelaren och datorns val, sedan skriver ut vinnaren efter att valen jämförs.
+ */
 public class GameLogic {
     /**
      * en metod som både skriver ut vad spelarna i matchen valde samt skriver ut resultaten och skickar det tillbaka
