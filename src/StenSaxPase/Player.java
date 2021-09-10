@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * @author MauroCataldi
  * Innehåller och efterfrågar/räknar ut spelarens val. Innehåller även match historik, samt håller koll på
  * vilket index det har sparat historik fram till.
  */

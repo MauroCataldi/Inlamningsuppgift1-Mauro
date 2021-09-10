@@ -1,6 +1,7 @@
 package StenSaxPase;
 
 /**
+ * @author MauroCataldi
  * Skriver ut spelaren och datorns val, sedan skriver ut vinnaren efter att valen jämförs.
  */
 public class GameLogic {

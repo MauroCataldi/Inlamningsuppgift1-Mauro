@@ -1,6 +1,7 @@
 package StenSaxPase;
 
 /**
+ * @author MauroCataldi
  * Innehåller ett värde som representerar datorns val
  * Kan Slumpa fram ett nytt värde och skicka tillbaka det om det efterfrågas
  */

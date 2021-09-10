@@ -2,7 +2,7 @@ package StenSaxPase;
 
 
 /**
- * @author Mauro Cataldi
+ * @author MauroCataldi
  * innehåller main metoden som startar programmet
  */
 public class LaunchGame {

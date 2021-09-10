@@ -1,6 +1,7 @@
 package StenSaxPase;
 
 /**
+ * @author MauroCataldi
  * Innehåller alla menyer som presenteras för användaren
  */
 public class WriteMenu {
