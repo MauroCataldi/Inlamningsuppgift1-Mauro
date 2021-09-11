@@ -12,11 +12,12 @@ public class Computer {
      * genererar ett splumpat vörde som förvaras i form av heltal i klassen Computer
      */
     public void setComputerChoice() {
-        this.computerChoice = (int)(Math.random()*3)+1;
+        this.computerChoice = (int) (Math.random() * 3) + 1;
     }
 
     /**
      * returnerar det värde som förvaras i computerChoice
+     *
      * @return returnerar förvarad dator val
      */
     public int getComputerChoice() {
