@@ -52,7 +52,6 @@ public class Player {
 
     /**
      * Sparar matchens resultat i "matchResults" och ökar index räknaren.
-     * OBS! Om användaren spelar mer matcher än Integer variabeln tillåter kommer spelet inte fungera
      *
      * @param matchResult tar emot resultatet som vill sparas av matchen i form av String
      */

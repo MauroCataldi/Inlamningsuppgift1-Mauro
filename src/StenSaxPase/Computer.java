@@ -9,7 +9,7 @@ public class Computer {
     private int computerChoice;
 
     /**
-     * genererar ett splumpat vörde som förvaras i form av heltal i klassen Computer
+     * genererar en slumpad värde som förvaras i form av heltal i klassen Computer
      */
     public void setComputerChoice() {
         this.computerChoice = (int) (Math.random() * 3) + 1;
