@@ -6,15 +6,15 @@ package StenSaxPase;
  */
 public class WriteMenu {
     //initierar objekt av spelare samt dator
-    public static Computer computerPlayer = new Computer();
-    public static Player playerOne = new Player();
+    public Computer computerPlayer = new Computer();
+    public Player playerOne = new Player();
     // Loop som används för att avsluta program när det blir false
     private static boolean mainMenuLoop = true;
 
     /**
      * Huvud menyn, efterfrågar vad spelaren vill göra sedan utför det som valts
      */
-    public static void mainMenu() {
+    public void mainMenu() {
         while(mainMenuLoop) {
             System.out.println("1. Ny Match\t2. Historik\t3. Avsluta Spelet");
             System.out.print("User Input: ");
@@ -39,7 +39,7 @@ public class WriteMenu {
      * Efterfrågar spelarens val, sedan räknar ut Datorns val och skriver ut vinnaren.
      * Sparar resultatet i spelarens historik sedan påbörjar "afterMatchMenu" metoden.
      */
-    public static void matchChoiceMenu() {
+    public void matchChoiceMenu() {
         System.out.println("Vad väljer du?\n1. Sten\t2. Sax\t3. Påse");
         System.out.print("User Input: ");
         playerOne.playerChoice();
@@ -58,7 +58,7 @@ public class WriteMenu {
      * Menyn efter en match har spelats.
      * Efterfrågar vad spelaren vill göra, sedan utför det som spelaren angivit
      */
-    public static void afterMatchMenu() {
+    public void afterMatchMenu() {
         System.out.println("1. Meny\t2. Kör igen\t3. Avsluta Spelet");
         System.out.print("User Input: ");
         playerOne.playerChoice();

@@ -33,11 +33,15 @@ public class Player {
      */
     public void printHistory() {
         if (!matchResults.isEmpty()) {
+
             System.out.println("\nSkriver ut historik:");
+
             for (int i = 0; i < matchResults.size(); i++) {
                 System.out.println(matchResults.get(i));
             }
+
             System.out.println(" ");
+
         } else {
             System.out.println("Historik är tom");
         }

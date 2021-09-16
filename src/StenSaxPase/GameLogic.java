@@ -11,7 +11,7 @@ public class GameLogic {
      *
      * @param playerChoice   Integer valet sparat i spelar(Player) klassen/objektet skickas hit
      * @param computerChoice Integer valet sparat i dator(Computer) klassen/objektet skickas hit
-     * @return String är returnerad med medelandet av matchens resultat
+     * @return String är returnerad med medellandet av matchens resultat
      */
     public static String matchExecute(int playerChoice, int computerChoice) {
         String svar;
@@ -42,6 +42,7 @@ public class GameLogic {
 
     /**
      * Jämför spelaren samt datorns val som skickas in sedan returnerar resultatet i form av en string
+     * Exempel = 1:sten 2:sax 3:påse
      *
      * @param spelarVal integer som spelaren valde
      * @param datorVal  integer som datorn valde
